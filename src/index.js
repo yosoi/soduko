@@ -3,12 +3,15 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import 'bootstrap/dist/css/bootstrap-reboot.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppController from './app/AppController';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const appController = new AppController();
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App appController = {appController}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
