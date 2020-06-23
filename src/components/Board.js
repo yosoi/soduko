@@ -5,6 +5,7 @@ import TileGroup from './TileGroup'
 
 export default function Board({
   help,
+  onGuess,
   onSolved,
   solutions
 }) {
